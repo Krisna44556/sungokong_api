@@ -25,6 +25,7 @@ Route::post('/login', [AuthController::class, 'login']);
 // ==========================
 // 🔒 PROTECTED ROUTES
 // ==========================
+
 Route::middleware('auth:sanctum')->group(function () {
 
     // 🔐 Authenticated User
