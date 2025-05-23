@@ -10,10 +10,8 @@ class BookController extends Controller
     // 📚 Get all books
     public function index()
     {
-        $books = Book::all();
-
+        $books = \App\Models\Book::all();
         return response()->json([
-            'status' => 'success',
             'data' => $books
         ]);
     }
